@@ -1,0 +1,123 @@
+.header {
+    height: 90px;
+    width: 1046px;
+    margin: 0 auto;
+}
+
+.header_right {
+    float: right;
+    height: 110px;
+    position: relative;
+}
+
+.header_right>div {
+    position: absolute;
+    top: 50;
+    right: 0;
+}
+
+.header_right ul {
+    margin-top: 40px;
+}
+
+.header_right ul a li {
+    border-right: 1px solid #000;
+    height: 25px;
+    font-size: 15px;
+    padding: 0 25px;
+    font-weight: bold;
+    color: #666;
+}
+
+.header_right ul a {
+    float: left;
+    line-height: 15px;
+}
+
+.header_right ul a li:hover {
+    color: rgb(75, 70, 70);
+}
+
+.header_right ul a:last-child li {
+    /*去掉最后的边框*/
+    border: none;
+}
+
+.show_list {
+    position: relative;
+}
+
+.show_list .move_list {
+    display: none;
+    z-index: 103;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    background: rgb(105, 98, 98);
+    text-align: center;
+}
+
+.show_list .move_list li {
+    padding: 8px 0;
+    width: 114px;
+    color: #fff;
+}
+
+.header_right ul a .show_list {
+    padding-bottom: 20px;
+    border-right: none;
+}
+
+.show_list:hover .move_list {
+    display: block;
+}
+
+.header_right ul a:nth-child(3) {
+    border-left: 1px solid #000;
+}
+
+.show_list .move_list li:hover {
+    color: white;
+    background: rgb(138, 121, 91);
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+em,
+i {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+a {
+    font: 14px/24px Microsoft YaHei, Arial, \\5B8B\4F53, Arial Narrow;
+    letter-spacing: 1.2px;
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623;
+}
+
+img {
+    border: 2;
+    vertical-align: middle
+}
+
+input {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,80 @@
+.food {
+    width: 1200PX;
+    height: auto;
+    background: color #00FFFF;
+    margin: 0px auto;
+}
+
+.box3 {
+    width: 1100px;
+    height: 240px;
+    /* border:2px solid blue; */
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.box3 .foodimg {
+    width: 260px;
+    height: 200px;
+    /* background-color: #0000FF; */
+}
+
+.box3 .foodtext {
+    width: 60%;
+    height: 200px;
+    color: #000;
+    margin-left: 30px;
+    font-size: 18px;
+    /* border:2px solid red; */
+}
+
+.suojin {
+    text-indent: 2em;
+}
+
+.box3 .foodtext h3 {
+    font-weight: normal;
+    color: black;
+}
+
+.box3 .foodmore {
+    width: 150px;
+    height: 200px;
+    border: #00FFFF;
+}
+
+.box3 .foodmore p {
+    opacity: 0;
+    width: 110px;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    border-left: 3px solid black;
+    margin-top: 80px;
+}
+
+.box3 .foodmore p a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.box3:hover .foodimg {
+    transition: 0.5s;
+    /* margin-left:20px; */
+    transform: scale(1.20);
+    /* transform: translateX(20px); */
+}
+
+.box3:hover .foodtext {
+    transition: 0.8s;
+    margin-left: 40px;
+}
+
+.box3:hover .foodmore p {
+    opacity: 1;
+    transition: 1s;
+    margin-left: 15px;
+}

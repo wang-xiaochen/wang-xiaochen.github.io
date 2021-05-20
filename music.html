@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <script src="js/index.js"></script>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="css/music1.css">
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_right">
+            <ul>
+                <a href="index.html">
+                    <li>个人首页</li>
+                </a>
+                <a href="travel.html">
+                    <li class="show_list">
+                        <span>风景名片</span>
+                        <ul class="move_list">
+                            <li>新闻热议</li>
+                            <li>网红打卡</li>
+                            <li>故园旧里</li>
+                        </ul>
+                    </li>
+                </a>
+                <a href="food.html">
+                    <li>美食集锦</li>
+                </a>
+                <a href="music.html" target="_blank">
+                    <li>治愈歌单</li>
+                </a>
+                <a href="pet.html">
+                    <li>宠物百科</li>
+                </a>
+                <a href="https://blog.csdn.net/weixin_47554309/article/details/117065482">
+                    <li>了解更多</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <div class="banner">
+        <ul>
+            <li class="m1" datasrc="music/打上花火.mp3" title="打上花火">
+                <img src="img/6.jpg" height="70" width="70">
+            </li>
+            <li class="m2" datasrc="music/离人.mp3" title="离人">
+                <img src="img/汽水.png" height="90" width="90">
+            </li>
+            <li class="m3" datasrc="music/Super_Star.mp3" title="Super_star">
+                <img src="img/2.png" height="119" width="119">
+            </li>
+            <li class="m4" datasrc="music/Mojito.mp3" title="Mojito">
+                <img src="img/5.jpg" height="90" width="90">
+            </li>
+            <li class="m5">
+                <img src="img/4.jpg" height="75" width="75">
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="music-container" id="music-container">
+        <!-- 音乐信息 -->
+        <div class="music-info">
+            <!-- 音乐标题 -->
+            <h4 id="title"></h4>
+            <!-- 音乐播放进度条 -->
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <!-- 默认第一首音乐 -->
+        <audio src="music/遇见.mp3" id="audio"></audio>
+
+        <!-- 音乐封面 -->
+        <div class="img-container">
+            <img src="img/遇见.jpg" alt="music-cover" id="music-cover">
+        </div>
+        <!-- 播放控制 -->
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                    <i class="fas fa-backward"></i>
+                </button>
+            <button id="play" class="action-btn action-btn-big">
+                    <i class="fas fa-play"></i>
+                </button>
+            <button id="next" class="action-btn">
+                    <i class="fas fa-forward"></i>
+                </button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

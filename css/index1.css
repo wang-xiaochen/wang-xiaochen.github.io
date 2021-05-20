@@ -1,0 +1,87 @@
+footer {
+    height: 300px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+}
+
+.footer-main {
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer-nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+    padding-top: 50px;
+    float: left;
+}
+
+.footer-nav dl {
+    float: left;
+    text-align: center;
+}
+
+.footer-nav dt {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 2px gray solid;
+    margin-bottom: 20px;
+}
+
+.footer-nav dd {
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.footer-nav a {
+    color: gray;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    color: pink;
+}
+
+form {
+    width: 500px;
+    padding: 50px 0 0 30px;
+    float: right;
+}
+
+form input,
+textarea {
+    outline: none;
+    border: 1px #fff solid;
+    background-color: #3091db;
+    color: white;
+}
+
+form input {
+    height: 30px;
+}
+
+form textarea {
+    width: 345px;
+    margin-top: 10px;
+}
+
+::placeholder {
+    color: white;
+}
+
+form input[type=submit] {
+    width: 80px;
+    color: white;
+}
+
+.footer-footer {
+    width: 100%;
+    border-top: 2px white solid;
+    color: white;
+    font-size: 18px;
+    margin-top: 150px;
+    line-height: 40px;
+    text-align: center;
+}

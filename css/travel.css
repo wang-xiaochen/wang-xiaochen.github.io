@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(245, 240, 240);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    flex-flow: wrap;
+}
+
+section {
+    position: relative;
+    padding: 100px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*图片线条模糊化，产生层次效果*/
+
+.banner:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top, #111, transparent);
+}
+
+
+/*文本中央显示*/
+
+.banner .content {
+    position: relative;
+    max-width: 900px;
+    text-align: center;
+    z-index: 1;
+}
+
+
+/*调整文字大小*/
+
+.banner .content h2 {
+    color: #fff;
+    font-size: 4em;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.image {
+    font-family: 'Playfair Display', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 315px;
+    max-height: 220px;
+    width: 100%;
+    color: #000;
+    text-align: right;
+    font-size: 16px;
+    background-color: gray;
+}
+
+.image * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.image img {
+    max-width: 100%;
+    backface-visibility: hidden;
+}
+
+.image figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 1;
+    padding: 30px 0 30px 10px;
+    background-color: #fff;
+    width: 40%;
+    -webkit-transform: translateX(150%);
+    transform: translateX(150%);
+}
+
+.image figcaption:before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 100%;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 120px 120px 120px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.image:after {
+    position: absolute;
+    bottom: 50%;
+    right: 40%;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.image h3 {
+    position: relative;
+    text-align: center;
+    line-height: 2.5em;
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+    margin: 0;
+}
+
+.image h3 {
+    margin: 0 0 15px;
+    line-height: 2em;
+    font-weight: 900;
+    font-size: 1.4em;
+    opacity: 0.85;
+}
+
+.image i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 30px;
+    font-size: 44px;
+    color: rgb(226, 221, 221);
+    opacity: 0;
+}
+
+.image a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.image:hover img,
+.image.hover img {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    -webkit-opacity: 0.5;
+    opacity: 0.2;
+}
+
+.image:hover:after,
+.image.hover:after,
+.image:hover figcaption,
+.image.hover figcaption,
+.image:hover i,
+.image.hover i {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/* 背景仅演示，请自行修改 */
+
+html {
+    height: 100%;
+}
+
+
+/*按钮及位置调整*/
+
+.btn {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+}
+
+
+/*图片位置调整*/
+
+.fitBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+
+/*文字排版调节*/
+
+.second {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*文章排版*/
+
+.second .contentBx {
+    position: relative;
+    left: 20px;
+    min-width: 50%;
+    width: 50%;
+    text-align: left;
+    padding-right: 50px;
+}
+
+
+/*内容调整，廧设定*/
+
+.titleText {
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 12px;
+}
+
+.text {
+    color: rgb(124, 106, 106);
+    font-size: 1em;
+}
+
+
+/*图片调整大小及格式*/
+
+.second .imgBx {
+    position: relative;
+    min-width: 450px;
+    width: 450px;
+    min-height: 450px;
+}
+
+
+/*图片格式排版*/
+
+.banner2,
+.banner3 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*图片上下隔层模糊化*/
+
+.banner2:before,
+.banner3:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top, rgb(160, 148, 148), transparent);
+}
+
+.banner2:after,
+.banner3:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgb(199, 188, 188), transparent);
+}
+
+.destination {
+    text-align: center;
+}
+
+.destination .content {
+    text-align: center;
+}
+
+
+/*文字排版*/
+
+.caption {
+    float: left;
+    width: 59%;
+    word-break: break-all;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    padding: 30px 0 0 30px;
+}
+
+@media (max-width: 767px) {
+    section {
+        padding: 40px;
+    }
+    .banner .content h2 {
+        font-size: 2.5em;
+    }
+    .banner .content p {
+        font-size: 1em;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about .contentBx,
+    .about .imgBx {
+        min-width: 100%;
+        width: 100%;
+        text-align: center;
+        padding-right: 0px;
+    }
+    .about .imgBx {
+        min-height: 250px;
+    }
+    .btn {
+        margin-bottom: 30px;
+    }
+    .decoration .destinationList .box {
+        position: relative;
+        max-width: 350px;
+        min-width: initial;
+        width: 350px;
+        height: 400px;
+        background: #191919;
+        transition: 0.5s;
+    }
+    .decoration .destinationList .box .img {
+        height: 320px;
+    }
+    .footer .sci li a img {
+        filter: invert(1);
+        max-width: 30px;
+    }
+}
+
+.container {
+    position: relative;
+    height: 450px;
+    width: 1450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    bottom: 80px;
+}
+
+.container .card {
+    margin-top: 100px;
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
+}
+
+.container .card:hover {
+    height: 400px;
+}
+
+.container .card .imgBx {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container .card .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: .3s;
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/index1.css">
+    <link rel="stylesheet" href="css/Horse.css">
+    <script src="js/Horse.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/nav.css">
+    <style type="text/css">
+        .container {
+            width: 1400px;
+            height: 500px;
+            padding: 0px 50px;
+            display: flex;
+            /*弹性布局*/
+            align-items: center;
+            /*纵轴方向居中对齐*/
+            justify-content: left;
+            /*X轴方向左对齐*/
+        }
+        
+        .card {
+            height: 270px;
+            max-width: 310px;
+            margin: 0px 20px;
+            background: rgba(255, 255, 255, 0.5);
+            transition: 0.4s;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            /*设置阴影效果*/
+        }
+        
+        .card:hover {
+            height: 400px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card .img {
+            height: 200px;
+            width: 100%;
+        }
+        
+        .card .img img {
+            right: 10px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            /*切割图片，保留图片原比例大小*/
+        }
+        
+        .card .top-text {
+            padding-top: 10px;
+        }
+        
+        .card .top-text .name {
+            font-size: 20px;
+            font-weight: 550;
+            color: #000;
+        }
+        
+        .card .top-text p {
+            font-size: 10px;
+            font-weight: 500;
+            /*字体粗细*/
+            color: #a19f9f;
+            line-height: 20px;
+        }
+        
+        .card .bottom-text {
+            text-indent: 2em;
+            /*首行缩进*/
+            padding: 0 0 10px 30px;
+            margin-top: 5px;
+            background: 'rgba(255,255,255,0.5)';
+            visibility: hidden;
+            transition: 0.5s;
+        }
+        
+        .card:hover .bottom-text {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .card .bottom-text .text {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_right">
+            <ul>
+                <a href="#">
+                    <li>个人首页</li>
+                </a>
+                <a href="travel.html" target="_blank">
+                    <li class="show_list">
+                        <span>风景名片</span>
+                        <ul class="move_list">
+                            <li>新闻热议</li>
+                            <li>网红打卡</li>
+                            <li>故园旧里</li>
+                        </ul>
+                    </li>
+                </a>
+                <a href="food.html">
+                    <li>美食集锦</li>
+                </a>
+                <a href="music.html" target="_blank">
+                    <li>治愈歌单</li>
+                </a>
+                <a href="pet.html">
+                    <li>宠物百科</li>
+                </a>
+                <a href="https://blog.csdn.net/weixin_47554309/article/details/117065482">
+                    <li>了解更多</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <div class="box">
+        <!-- 左侧按钮 -->
+        <a href="javascript:;" class="left">&lt</a>
+        <!-- 右侧按钮 -->
+        <a href="javascript:;" class="right">&gt</a>
+        <!-- 轮播图片 -->
+        <ul class="imgs">
+            <li class="one">
+                <a href="#"><img src="img/风景1.jpg" alt="banner" width="800" height="350"></a>
+            </li>
+            <li class="two">
+                <a href="#"><img src="img/背影1_看图王.jpg" alt="banner" width="800" height="350"></a>
+            </li>
+            <li class="three">
+                <a href="#"><img src="img/红丝绒蛋糕.png" alt="banner" width="800" height="350"></a>
+            </li>
+            <li class="four">
+                <a href="#"><img src="img/西瓜.png" alt="banner" width="800" height="350"></a>
+            </li>
+            <li class="five">
+                <a href="#"><img src="img/宠物.jpg" alt="banner" width="800" height="350">></a>
+            </li>
+            <li class="six">
+                <a href="#"><img src="img/风景3.jpg" alt="banner" width="800" height="350">></a>
+            </li>
+        </ul>
+        <ul class="list">
+        </ul>
+        <div class="rights"></div>
+        <div class="lefts"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <font size='3'>
+        <h1>WELCOME <span>TO</span> MYHTML</h1>
+    </font>
+    <center>
+        <p>
+            <font size='2.7' color="gray">
+                我们像是表面上的针，不停地转动，一面转，一面看着事件匆匆离去，却无能为力</font>
+        </p>
+        <p>
+            <font size='2.7' color="gray">或许，最美好的事不是留住时光，而是留住记忆，如最初相识的感觉一样，哪怕一个不经意的笑容，便是我们最怀念的事情</p>
+        </font>
+        <p>
+            <font size='2.7' color="gray">但愿，时光如初见</p>
+        </font>
+    </center>
+
+    <div class="container">
+        <div class="card">
+            <div class="img">
+                <img style="width:300px;height:210px;border-radius:50%;" src="img/人物1.jpg">
+                <!-- one -->
+            </div>
+            <br>
+            <div class="top-text">
+                <div class="name">
+                    <center>个人介绍</center>
+                </div>
+
+            </div>
+            <div class="bottom-text">
+                <div class="text">
+                    <font color='gray'>
+                        <p><small>一个大二的计算机学生，没走过太多的地方,但是向往很多</small></p>
+                        <p><small>IT理工男，缺乏一点趣味，爱好呢？不多喜欢四处走走，旅行听听歌</small></p>
+                    </font>
+                </div>
+            </div>
+        </div>
+        <!-- two -->
+        <div class="card">
+            <div class="img">
+                <img style="width:300px;height:210px;border-radius:50%;" src="img/红丝绒蛋糕.png">
+            </div>
+            <br>
+            <div class="top-text">
+
+                <div class="name">
+                    <center> 美句集锦</center>
+
+                </div>
+                <!-- <p>Apps Developer</p> -->
+            </div>
+            <div class="bottom-text">
+                <div class="text">
+                    <font color='gray'>
+                        <p><small>孤独不曾远离，幸福却也无处不在，只是自己总是不愿意去拾起那些飘落，只想把希望留给那些等待的人，他们也需要心灵的美酒……</small></p>
+                    </font>
+                </div>
+            </div>
+        </div>
+        <!-- three -->
+        <div class="card">
+            <div class="img">
+                <img style="width:300px;height:210px;border-radius:50%;" src="img/人物2.jpg">
+            </div>
+            <br>
+            <div class="top-text">
+                <div class="name">
+                    <center>治愈歌单</center>
+                </div>
+            </div>
+            <div class="bottom-text">
+                <div class="text">
+                    <font color='gray'>
+                        <p><small>《小王子》&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp野夫子</small></p>
+                        <p><small>《负重一万斤长大》&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp太一</small></p>
+                        <p><small>《遇见》&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp孙燕姿</small></p>
+                        <p><small>《三号线》&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp刘大壮
+                            </small></p>
+                    </font>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img style="width:300px;height:210px;border-radius:50%;" src="img/汽水.png">
+                <!-- one -->
+            </div>
+            <br>
+            <div class="top-text">
+                <div class="name">
+                    <center>个人经历</center>
+                </div>
+
+            </div>
+            <div class="bottom-text">
+                <div class="text">
+                    <font color='gray'>
+                        <p><small>曾经翻山跨海，如今却没了任何想法，异地求学，如今更怀念确是从前久居的滨海小城，不大也不够繁花，却让人莫名的安心。</small></p>
+                    </font>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="scenery">
+        <!--标题和描述-->
+        <h1>SCENCRY&nbsp&nbsp&nbspCARD</h1>
+        <p>海是那么美，那么静，可是，总会让人发现他不一样的美，让我们共同感受到大自然的美，将来，海会更加蓝，草会更加绿，美是一种常态</p>
+        <!--图文区-->
+        <article>
+            <!--左侧图文-->
+            <div class="part1">
+                <img src="img/碧海1_看图王.jpg" alt="" height="307" width="553">
+            </div>
+            <!--右侧文章-->
+            <div class="part2">
+                <ul>
+                    <br><br>
+                    <li><a href="https://baijiahao.baidu.com/s?id=1676538485131713453&wfr=spider&for=pc" target="_blank">中央审议《黄河流域生态保护和高质量发展规划纲要》<small>2020-08-31</small></a></li>
+
+                    <li><a href="travel.html">大理洱海梦，玉龙雪山情<small>2021-05-11</small></a></li>
+                    <li id="C1"><a href="">故宫还清梦，圆明沈旧思，故归览长城<small>2021-05-11</small></a></li>
+                    <li><a href="">网红打卡，重庆洪崖洞<small>2021-05-11</small></a></li>
+                    <li><a href="">美食集锦地，港澳，长沙顺德四角唠<small>2021-05-11</small></a></li>
+                    <li><a href="">旧园故里，蓬莱古楼眺海望<small>2021-05-11</small></a></li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section class="food">
+        <h1>CULINARY&nbsp&nbspHIGHLIGHTS</h1>
+        <div id="horse-box">
+            <div id="horse-con">
+                <div id="horse-1"></div>
+                <div id="horse" class="d-flex justify-content-between">
+                    <img src="img/饺子.png" class="horse-img" />
+                    <img src="img/马卡龙.png" class="horse-img" />
+                    <img src="img/红烧肉_看图王.png" class="horse-img" />
+                    <img src="img/汽水.png" class="horse-img" />
+                    <img src="img/生蚝_看图王.png" class="horse-img" />
+                    <img src="img/奶茶.png" class="horse-img" />
+                    <img src="img/小笼包3.png" class="horse-img" />
+                    <img src="img/红丝绒蛋糕.png" class="horse-img" />
+                    <img src="img/寿司_看图王.png" class="horse-img" />
+                    <img src="img/坚果.png " class=" horse-img " />
+                    <img src="img/西瓜.png " class="horse-img " />
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class=" pet ">
+        <h1>PET&nbsp&nbspENCYCLOPEDIA</h1>
+        <div class="item ">
+            <div class='img-div'><img class='img' style="width:380px;height:225px " src="img/布偶猫.jpg " /></div>
+            <div class='caption'>
+                <font color="gray ">
+                    <p>有宠物陪伴的日子，你会觉得它们很没用，很碍事，但没有宠物的日子，你会觉得很悲伤</p>
+                    <p>谁能不嫌你贫穷，不嫌你丑陋，不嫌你疾病，不嫌你衰老呢？谁能让你呼之则来，挥之则去，不计较你的粗鲁和无理，并无休止的迁就你呢？除了狗还有谁呢？</p>
+                    <p>狗狗，是你人生中的一部分。而你，却是牠的一辈子</p>
+                    <p>不曾养过狗的人，很难想像与狗一起生活是什么样子，养过狗的人，则无法想像没有狗的日子该怎么过</p>
+                    <p>契约停留的二月时光里，我的世界，不只有它，还有诸多爱我和我爱之人；而他呢，整个世界，和那方虽小却温馨异常的</p>
+                </font>
+            </div>
+            <div style='clear:both;height:0;overflow:hidden;'></div>
+        </div>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="footer-main ">
+            <div class="footer-nav ">
+                <dl>
+                    <dt><a href="# ">个人HTML</a></dt>
+                    <dd><a href="# ">个人介绍</a></dd>
+                    <dd><a href="# ">美句集锦</a></dd>
+                    <dd><a href="# ">治愈歌单</a></dd>
+                    <dd><a href="# ">个人经历</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="# ">风景名片</a></dt>
+                    <dd><a href="# ">新闻热议</a></dd>
+                    <dd><a href="# ">网红打卡</a></dd>
+                    <dd><a href="# ">故园旧里</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="# ">美食集锦</a></dt>
+                    <dd><a href="# ">可口菜系</a></dd>
+                    <dd><a href="# ">热饮小吃</a></dd>
+                    <dd><a href="# ">休闲甜点</a></dd>
+                    <dd><a href="# ">应季果蔬</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="# ">宠物百科</a></dt>
+                    <dd><a href="# ">宠物资料</a></dd>
+                    <dd><a href="# ">购买流程</a></dd>
+                    <dd><a href="# ">售后服务</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="# ">了解更多</a></dt>
+                </dl>
+            </div>
+
+    </footer>
+
+</body>
+
+</html>
